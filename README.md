@@ -25,4 +25,5 @@
 - Sentinel限流降级
 
 ### 项目业务流程与核心逻辑代码设计
-![OJ drawio](https://github.com/asdrfdc/training-OJ/assets/163655764/cefce24b-6bdd-4283-82f4-7a7364eb2a53)
+![OJ drawio](https://github.com/asdrfdc/training-OJ/assets/163655764/28c6d6eb-554d-4b5c-ae31-f0d647bc95c4)
+
