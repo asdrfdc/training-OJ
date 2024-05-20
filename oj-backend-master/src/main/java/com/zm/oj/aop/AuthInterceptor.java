@@ -1,17 +1,18 @@
 package com.zm.oj.aop;
 
-import com.zm.oj.AuthCheck;
+
+import com.zm.oj.annotation.AuthCheck;
 import com.zm.oj.common.ErrorCode;
 import com.zm.oj.exception.BusinessException;
 import com.zm.oj.model.entity.User;
 import com.zm.oj.model.enums.UserRoleEnum;
 import com.zm.oj.service.UserService;
-import javax.Resource;
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.Around;
-import org.aspectj.lang.Aspect;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;

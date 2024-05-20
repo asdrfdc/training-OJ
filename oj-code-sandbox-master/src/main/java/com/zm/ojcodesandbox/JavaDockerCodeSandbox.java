@@ -1,7 +1,7 @@
 package com.zm.ojcodesandbox;
 
 import cn.hutool.core.io.resource.ResourceUtil;
-import cn.hutool.core.util.Arratil;
+import cn.hutool.core.util.ArrayUtil;
 import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.api.async.ResultCallback;
 import com.github.dockerjava.api.command.*;
@@ -201,7 +201,8 @@ public class JavaDockerCodeSandbox extends JavaCodeSandboxTemplate {
             String[] inputArgsArray = inputArgs.split(" ");
 
             //构造执行命令
-            String[] cmdArray = Arratil.append(new String[]{"java", "-cp", "/app", "Main"}, inputArgsArray);
+            String[] cmdArray = ArrayUtil.append(new String[]{"java", "-cp", "/app", "Main"}, inputArgsArray);
+
 
             //执行命令
             ExecCreateCmdResponse execCreateCmdResponse = dockerClient.execCreateCmd(containerId)

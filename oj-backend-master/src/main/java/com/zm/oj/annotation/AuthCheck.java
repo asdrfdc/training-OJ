@@ -1,9 +1,10 @@
 package com.zm.oj.annotation;
 
-import java.lang.ElementType;
-import java.lang.Retention;
-import java.lang.RetentionPolicy;
-import java.lang.Target;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * 权限校验
